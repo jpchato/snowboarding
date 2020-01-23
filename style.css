@@ -1,5 +1,5 @@
 header {
-    background-color: green;
+    background-color: rgb(8, 104, 8);
 }
 
 main {
@@ -18,25 +18,26 @@ text-align: center;
 }
 
 article {
-background-color: blue;
+background-color: rgb(46, 162, 240);
 width: 50%;
+height: 100%;
 float: right;
 text-align: center;
 }
 
 footer {
-    background-color: brown;
+    background-color: rgb(138, 67, 0);
 }
 
 #leftside {
     float: left;
-height: max-content;
+height: 100%;
 text-align: center;
 }
 
 #rightside {
     float: right;
-height: max-content;
+height: 100%;
 text-align: center;
 }
 
@@ -48,5 +49,6 @@ margin-top: 0px;
 }
 
 nav {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 0px;
 }
