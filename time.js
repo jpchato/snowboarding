@@ -1,14 +1,12 @@
-var today = new Date ();
-var hourNow = today.getHours ();
-var greeting;
+var d = new Date();
+var time = d.getHours();
 
-if (hourNow > 18) {
-    greeting = 'Good evening';
-} else if (hourNow > 12) {
-    greeting = 'Good afternoon';
-} else if (hourNow > 0) {
-    greeting = 'Good morning';
-} else {
-    greeting = 'Welcome'
+if (time < 12) {
+  document.write("<b>Rise and shine!</b>");
 }
-document.write(greeting);
+if (time > 12) {
+  document.write("<b>Time to ride the slopes!</b>");
+}
+if (time == 12) {
+  document.write("<b>afk brb lunch!</b>");
+}

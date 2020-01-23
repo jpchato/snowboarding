@@ -1,2 +1,5 @@
-var greet = "Let's do it!";
-            document.write(greet); // Prints: Let's do it!
+var customerName = prompt("Please enter your name", "");
+if (customerName!= null) {
+    document.getElementById("welcome").innerHTML =
+    "Hello " + customerName + "! How are you today?";
+}
