@@ -1,12 +1,17 @@
-var d = new Date();
-var time = d.getHours();
+function time(){
 
-if (time < 12) {
-  document.write("<b>Rise and shine!</b>");
-}
-if (time > 12) {
-  document.write("<b>Time to ride the slopes!</b>");
-}
-if (time == 12) {
-  document.write("<b>afk brb lunch!</b>");
-}
+  var d = new Date();
+  var time = d.getHours();
+  var greeting; 
+
+  if (time < 12) {
+    greeting = 'Rise and Shine';
+  }if (time > 12) {
+    greeting = 'Time to Ride the Slopes');
+  }if (time == 12) {
+    greeting = 'AFK BRB Lunch';
+  }
+
+  return greeting;
+
+};
