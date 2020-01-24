@@ -1,11 +1,21 @@
-function store(){
+function gearType(){
+    var gear = prompt('what kind of gear do you need?');
     
-    var handPro = prompt('what do you want to buy?');
-    while (handPro !== 'gloves' && handPro !== 'jackets')
-    handPro = prompt('Enter gloves or jackets')
-// }
-//     // var amount, quantity; 
-//     quantity = prompt("how many do you want?");  
-//     alert(('you bought 'handPro' + 'amount'!'))
-    
-};
+    if (gear === ("gloves" || "jackets")){
+    alert(gear + ' protect you from the cold!');
+    return (gear + "will help protect you!</strong>");
+    var item, quantity; 
+    quantity = prompt("how many do you want?");
+    while ( isNaN(quantity)){
+        quantity = prompt("Please enter a number like 6")
+    };
+    } else {alert(gear + '!! We only have gloves and jackets');
+    return (gearType());
+    }
+}
+
+function quantity(){
+    for ( i = 0; i <= 4; i++){
+        document.write(i);
+        }
+    }
